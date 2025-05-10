@@ -42,6 +42,7 @@ function roll() {
 
   if (isHeavyAttack) {
     totalDamage *= 2;
+    adjustedBase -= 3;
   }
 
   document.getElementById("result-hits").textContent = accuracyResult + adjustedBase;
