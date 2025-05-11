@@ -54,7 +54,7 @@ function roll() {
 
 
 function rollDie(sides) {
-  return result = Math.floor(Math.random() * sides) + 1;
+  return Math.floor(Math.random() * sides) + 1;
 }
 
 function rollToHit() {
