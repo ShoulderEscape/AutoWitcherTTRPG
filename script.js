@@ -44,7 +44,7 @@ function roll() {
   let critTarget = targetInput;
 
   if(targetInput === "Random"){
-    
+
     finalTarget = getRandomTarget();
     critTarget = getCritTarget(critResult);
 
@@ -77,7 +77,7 @@ function roll() {
   document.getElementById("result-crit-rolled").textContent = critRolls.join(" | ");
   document.getElementById("result-crit-total").textContent = critResult;
   document.getElementById("result-crit-target").textContent = critTarget;
-  document.getElementById("result-crit-damage").textContent = critDamage;
+  document.getElementById("result-crit-damage").textContent = Math.floor(critDamage);
 
 }
 
