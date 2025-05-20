@@ -1,0 +1,57 @@
+<div class="combat-container">
+  <section class="combat-form">
+    <div class="form-group">
+      <label for="base">Base:</label>
+      <input type="text" id="base" #base />
+    </div>
+
+    <div class="form-group">
+      <label for="targets">Target:</label>
+      <select id="targets" #targets>
+        <option value="Random" selected>Random</option>
+        <option value="Head">Head</option>
+        <option value="Torso">Torso</option>
+        <option value="RArm">RArm</option>
+        <option value="LArm">LArm</option>
+        <option value="RLeg">RLeg</option>
+        <option value="LLeg">LLeg</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="basedamage">Base Damage:</label>
+      <input type="text" id="basedamage" #basedamage />
+    </div>
+
+    <div class="form-group">
+      <label for="damagedice">Damage Dice:</label>
+      <input type="text" id="damagedice" #damagedice />
+    </div>
+
+    <div class="form-group checkbox-group">
+      <label for="heavyAttack">
+        <input type="checkbox" id="heavyAttack" #heavyAttack />
+        Heavy Attack
+      </label>
+    </div>
+
+    <div class="form-group">
+      <button (click)="roll()">Roll</button>
+    </div>
+  </section>
+
+  <section class="combat-results">
+    <h4>Results</h4>
+    <p><strong>Hit die results:</strong> <span>{{ results.hitsRolled }}</span></p>
+    <p><strong>Hits:</strong> <span>{{ results.hits }}</span></p>
+    <p><strong>Target:</strong> <span>{{ results.target }}</span></p>
+    <p><strong>Damage die results:</strong> <span>{{ results.damageRolled }}</span></p>
+    <p><strong>Total Damage:</strong> <span>{{ results.totalDamage }}</span></p>
+
+    <h4>Crit Details</h4>
+    <p><strong>Crit die results:</strong> <span>{{ results.critRolled }}</span></p>
+    <p><strong>Crit Number:</strong> <span>{{ results.critTotal }}</span></p>
+    <p><strong>Crit Target:</strong> <span>{{ results.critTarget }}</span></p>
+    <p><strong>Total Crit Damage:</strong> <span>{{ results.critDamage }}</span></p>
+  </section>
+</div>

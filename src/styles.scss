@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #1c1c1c; // match your app’s bg
+  color: #e0d6c3; // optional, for global font color
+  font-family: 'Georgia', serif;
+}
+
+body {
+  overflow-x: hidden; // prevents horizontal scroll bar if caused by overflow
+}

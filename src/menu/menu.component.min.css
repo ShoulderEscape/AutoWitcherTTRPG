@@ -1,0 +1,1 @@
+:host .menu{display:flex;background-color:#2a2a2a;border-bottom:2px solid #444;font-family:'Georgia', serif}:host .menu div{padding:1rem 2rem;color:#e0d6c3;cursor:pointer;border-right:1px solid #444;transition:background 0.3s}:host .menu div:hover{background-color:#3b3b3b}:host .menu .selected{background-color:#1c1c1c;color:#d4b074;font-weight:bold}:host .invisible{display:none}

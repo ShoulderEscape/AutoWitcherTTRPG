@@ -1,0 +1,13 @@
+<nav class="menu">
+  <div 
+    class="tab" 
+    [class.selected]="isCombatSelected()" 
+    (click)="selectTab('combat')">Combat</div>
+  <div 
+    class="tab" 
+    [class.selected]="isIngredientsSelected()" 
+    (click)="selectTab('ingredients')">Ingredients</div>
+</nav>
+
+<app-combat *ngIf="isCombatSelected()"></app-combat>
+<app-ingredients *ngIf="isIngredientsSelected()"></app-ingredients>
