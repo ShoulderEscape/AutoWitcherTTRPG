@@ -58,9 +58,9 @@ function roll() {
 
     }
   }
-  let totalDamage = (damageResult + baseDamage) * damageMultipliers[finalTarget];
+  let totalDamage = (damageResult + baseDamage) //* damageMultipliers[finalTarget];
 
-  let critDamage = (damageResult + baseDamage) * damageMultipliers[critTarget]
+  let critDamage = (damageResult + baseDamage) //* damageMultipliers[critTarget]
 
   if (isHeavyAttack) {
     totalDamage *= 2;
