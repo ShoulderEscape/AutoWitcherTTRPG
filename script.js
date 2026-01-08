@@ -73,10 +73,10 @@ function roll() {
   document.getElementById("result-hits-rolled").textContent = accuracyRolls.join(" | ");
   document.getElementById("result-damage-rolled").textContent = damageRolls.join(" | ");
   document.getElementById("result-total").textContent = Math.floor(totalDamage);
-  document.getElementById("result-target").textContent = finalTarget;
+  document.getElementById("result-target").textContent = finalTarget  + " (× " + damageMultipliers[finalTarget]+")";
   document.getElementById("result-crit-rolled").textContent = critRolls.join(" | ");
   document.getElementById("result-crit-total").textContent = critResult;
-  document.getElementById("result-crit-target").textContent = critTarget;
+  document.getElementById("result-crit-target").textContent = critTarget+ " (× " + damageMultipliers[critTarget]+")"; 
   document.getElementById("result-crit-damage").textContent = Math.floor(critDamage);
 
 }
